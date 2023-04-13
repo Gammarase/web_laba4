@@ -1,0 +1,233 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("assets/fonts/Source\ Sans\ Pro/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+body {
+    background: #C3C3C3;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.header {
+    padding: 41px 90px 34px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background: #4C4B63;
+}
+
+.logo-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    line-height: 71px;
+}
+
+.side-menu {
+    display: none;
+}
+
+.hamb {
+    display: none;
+}
+
+
+
+.header h1 {
+    padding: 0;
+    margin: 0;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+
+.header img {
+    height: 47px;
+}
+
+.menu-flex {
+
+    display: flex;
+
+    line-height: 31px;
+    width: 70%;
+
+}
+
+.logo-flex ul {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.logo-flex ul li :hover {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(129, 128, 128, 0.56) 0%, rgba(217, 217, 217, 0) 100%);
+}
+
+.logo-flex p {
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.logo-flex li {
+    float: left;
+}
+
+.reg-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 26px;
+    background: #5386E4;
+    mix-blend-mode: normal;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.reg-button:hover {
+    box-shadow: 4px 6px 3px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+.reg-button p {
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 31px;
+}
+
+.reg-button p:hover {
+    text-decoration: none;
+}
+
+
+
+
+
+
+@media(max-width: 1170px) {
+
+    .logo-flex ul {
+
+        height: 100%;
+        width: auto;
+        padding: 0 23px;
+        position: fixed;
+        overflow: hidden;
+        top: 105px;
+        right: 0;
+        left: 0;
+        display: flex;
+        justify-content: start;
+        align-items: self-start;
+        flex-direction: column;
+        background-color: #4C4B63;
+        transition: max-height .5s ease-out;
+        max-height: 0;
+
+    }
+
+    .logo-flex ul li {
+        width: 100%;
+        border-bottom: inset 2px #FFFFFF;
+    }
+
+    /* .logo-flex .reg-button {
+        align-self: center;
+        margin-top: 20px;
+    } */
+
+
+    .logo-flex a {
+        align-self: center;
+        margin-top: 20px;
+    }
+
+    .logo-flex p {
+        font-size: 20px;
+    }
+
+    .header {
+        padding: 17px 23px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header img {
+        height: 30px;
+    }
+
+    .introduce {
+        padding: 0 23px;
+    }
+
+    .introduce-content {
+        width: 100%;
+    }
+
+    .introduce-title {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .introduce-text {
+        font-size: 15px;
+        line-height: normal;
+    }
+
+    .reg-button {
+        padding: 14px 18px;
+    }
+
+    .reg-button p {
+        font-size: 21px;
+    }
+
+
+    .side-menu:checked~.header .logo-flex ul {
+        max-height: 100%;
+    }
+
+    .side-menu:checked~.header {
+        right: 0;
+        left: 0;
+        position: fixed;
+    }
+
+
+    .hamb {
+        cursor: pointer;
+        display: flex;
+
+    }
+
+    .logo-flex {
+        align-items: center;
+    }
+
+
+}

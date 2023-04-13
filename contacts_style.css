@@ -1,0 +1,220 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("assets/fonts/Source\ Sans\ Pro/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+body {
+    background: #C3C3C3;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.reg-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 26px;
+    background: #5386E4;
+    mix-blend-mode: normal;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.reg-button:hover {
+    box-shadow: 4px 6px 3px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+.reg-button p {
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 31px;
+}
+
+.reg-button p:hover {
+    text-decoration: none;
+}
+
+.title {
+    padding: 68px 90px;
+    background: #949396;
+}
+
+.title h1 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    color: #2F2F2F;
+}
+
+.contacts-row {
+    display: flex;
+    gap: 20px;
+    padding: 90px 72px;
+
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 30px;
+    background: #949396;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    gap: 20px;
+}
+
+.contact .reg-button {
+    margin-top: auto;
+    align-self: center;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+
+.contact h1 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 41px;
+    
+
+
+    color: #252525;
+
+}
+
+.contact .info {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 31px;
+
+    color: #252525;
+}
+
+.final-interact {
+    padding: 104px 90px;
+    gap: 51px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4C4B63;
+}
+
+
+.final-interact h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 64px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+
+
+
+@media(max-width: 1170px) {
+
+    
+    .reg-button {
+        padding: 14px 18px;
+    }
+
+    .reg-button p {
+        font-size: 21px;
+    }
+
+
+    .side-menu:checked~.header .logo-flex ul {
+        max-height: 100%;
+    }
+
+    .side-menu:checked~.header {
+        right: 0;
+        left: 0;
+        position: fixed;
+    }
+
+
+    .hamb {
+        cursor: pointer;
+        display: flex;
+
+    }
+
+    .logo-flex {
+        align-items: center;
+    }
+
+    .title {
+        padding: 32px 23px;
+    }
+
+    .title h1 {
+        font-size: 40px;
+    }
+
+    .contacts-row {
+        flex-direction: column;
+        padding: 31px 23px;
+        
+    }
+
+    .contact{
+        width: auto;
+        gap: 10px;
+    }
+
+    .contact svg{
+        width: 50px;
+        height: 50px;
+    }
+
+    .contact h1{
+        font-size: 25px;
+    
+    }
+
+    .contact .info{
+        font-size: 21px;
+    }
+
+    .final-interact {
+        padding: 75px 23px;
+    }
+
+    .final-interact h1 {
+        font-size: 30px;
+        text-align: center;
+        line-height: normal;
+    }
+
+}

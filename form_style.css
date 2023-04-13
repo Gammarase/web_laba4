@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("assets/fonts/Source\ Sans\ Pro/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+form{
+    height: 70vh;
+    gap: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 31px;
+}
+
+form h1{
+    font-size: 32px;
+}
+
+input[type=submit]{
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 31px;
+}
+
+input[type=text]{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 31px;
+    border-radius: 5px;
+}

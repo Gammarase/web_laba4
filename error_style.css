@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+
+}
+body {
+    background: #C3C3C3;
+}
+
+.page_not_found{
+    display: flex;
+    height: 70vh;
+align-items: center;
+justify-content: center;
+}
+
+.page_not_found h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000;
+}
+
+
+@media(max-width: 1170px) {
+    .page_not_found h1{
+        padding: 0 23px;
+        font-size: 30px;
+    }
+
+}

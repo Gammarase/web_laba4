@@ -1,0 +1,600 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("assets/fonts/Source\ Sans\ Pro/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+body {
+    background: #C3C3C3;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+.reg-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 26px;
+    background: #5386E4;
+    mix-blend-mode: normal;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.reg-button:hover{
+    box-shadow: 4px 6px 3px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+.reg-button p {
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 31px;
+}
+
+.reg-button p:hover {
+    text-decoration: none;
+}
+
+
+.introduce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #4C4B63 0%, rgba(76, 75, 99, 0) 48.75%, #C3C3C3 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(assets/pexels-lukas-574071.jpg);
+    background-size: cover;
+}
+
+.introduce-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 730px;
+    gap: 44px;
+    height: inherit;
+    padding: 76px 0px 76px;
+}
+
+.introduce-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.introduce-text {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    padding: 109px 90px 89px;
+}
+
+.services-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+    color: #4C4B63;
+    padding-bottom: 52px;
+}
+
+.services-contaier {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.service {
+    padding: 30px;
+    background: #949396;
+    width: calc((100% - 220px)/3);
+    margin-bottom: 20px;
+
+}
+
+.service p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+
+    color: #252525;
+
+}
+
+.service-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.service-title img {
+    height: 65px;
+    padding-bottom: 21px;
+}
+
+.service-title p {
+    color: #252525;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    padding-bottom: 21px;
+}
+
+.specialists {
+    display: flex;
+    background-color: #4C4B63;
+    padding: 109px 90px;
+}
+
+.specialists img {
+    object-fit: cover;
+    width: 50%;
+
+}
+
+.specialists-content {
+    gap: 10px;
+    width: 50%;
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+}
+
+.specialists-content p {
+    margin-bottom: 52px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    color: #FFFFFF;
+}
+
+
+.specialists-row {
+    gap: 10px;
+    width: 100%;
+    justify-content: end;
+    display: flex;
+}
+
+.specialists-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+    width: calc((100% - 72px)/2);
+    aspect-ratio: 1/1;
+    background: #ABA8B2;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+
+.specialists-tile p {
+    margin: 0px;
+    padding: 0px 20px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+.specialists-tile h1 {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 64px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.portfolio {
+    padding: 109px 90px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio h1 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    color: #4C4B63;
+}
+
+.portfolio p {
+    padding: 25px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.portfolio-row {
+    padding: 50px 0px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.alarm {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(assets/pexels-zain-ali-6901037.jpg);
+    background-size: cover;
+}
+
+.finances {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(assets/pexels-torsten-dettlaff-54284.jpg);
+    background-size: cover;
+}
+
+.library {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(assets/pexels-photomix-company-242492.jpg);
+    background-size: cover;
+}
+
+
+.portfolio-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 26px;
+
+
+    background: #4C4B63;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.portfolio-button p {
+    padding: 0px;
+}
+
+.our-team {
+    padding: 120px 90px 62px;
+    display: flex;
+    background: linear-gradient(180deg, rgba(148, 147, 150, 0) 0%, #949396 53.96%);
+    flex-direction: column;
+}
+
+.our-team h1 {
+    padding: 0;
+    margin: 0px 0px 37px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 64px;
+
+
+    color: #FFFFFF;
+
+}
+
+.team-row {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.team-element {
+    width: calc((100%-40px)/3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-element img {
+    margin: 0px 0px 21px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+p.name {
+    margin: 0px 0px 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+p.job {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+.final-interact {
+    padding: 104px 90px;
+    gap: 51px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4C4B63;
+}
+
+.final-interact h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+@media(max-width: 1170px) {
+
+    
+    .introduce {
+        padding: 0 23px;
+    }
+
+    .introduce-content {
+        width: 100%;
+    }
+
+    .introduce-title {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .introduce-text {
+        font-size: 15px;
+        line-height: normal;
+    }
+
+    .reg-button {
+        padding: 14px 18px;
+    }
+
+    .reg-button p {
+        font-size: 21px;
+    }
+
+
+    .side-menu:checked~.header .logo-flex ul {
+        max-height: 100%;
+    }
+
+    .side-menu:checked~.header {
+        right: 0;
+        left: 0;
+        position: fixed;
+    }
+
+
+    .hamb {
+        cursor: pointer;
+        display: flex;
+
+    }
+
+    .logo-flex {
+        align-items: center;
+    }
+
+    .services {
+        padding-inline: 23px;
+    }
+
+    .services-title {
+        font-size: 30px;
+    }
+
+    .services-contaier {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .service {
+        padding: 52px 30px;
+        width: auto;
+    }
+
+    .service-title {
+
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .service p {
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .service-title p {
+        font-size: 24px;
+    }
+
+    .service-title img {
+        height: 40px;
+    }
+
+    .service-title img {
+        margin-right: 15px;
+    }
+
+    .specialists {
+        padding: 56px 23px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)), url(assets/pexels-cottonbro-studio-6804595.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .specialists img {
+        display: none;
+    }
+
+    .specialists-content {
+        width: 100%;
+        align-items: start;
+    }
+
+    .specialists-content p {
+        margin-bottom: 36px;
+        font-size: 30px;
+    }
+
+    .specialists-row {
+        justify-content: start;
+    }
+
+    .specialists-tile {
+        border-radius: 12px;
+        width: calc((100%-56px)/2);
+    }
+
+    .specialists-tile h1 {
+        font-size: 40px;
+    }
+
+    .specialists-tile p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .portfolio {
+        padding: 70px 23px 43px;
+    }
+
+    .portfolio h1 {
+        font-size: 30px;
+    }
+
+    .portfolio-row {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .portfolio-row p {
+        padding: 30px;
+        font-size: 22px;
+    }
+
+    .portfolio-button {
+        padding: 15px 21px;
+    }
+
+    .portfolio-button p {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .portfolio-button img {
+        height: 30px;
+    }
+
+    .our-team {
+        padding: 45px 23px;
+        background: linear-gradient(180deg, #C3C3C3 0%, #4C4B63 100%);
+    }
+
+    .our-team h1 {
+        font-size: 30px;
+    }
+
+    .team-row {
+        flex-direction: column;
+        gap: 41px;
+    }
+
+    .team-element {
+        width: 100%;
+    }
+
+    p.name {
+        font-size: 24px;
+    }
+
+    p.job {
+        font-size: 20px;
+    }
+
+    .final-interact {
+        padding: 75px 23px;
+    }
+
+    .final-interact h1 {
+        font-size: 30px;
+        text-align: center;
+        line-height: normal;
+    }
+
+
+}

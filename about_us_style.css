@@ -1,0 +1,443 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("assets/fonts/Source\ Sans\ Pro/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+body {
+    background: #C3C3C3;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+
+.reg-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 26px;
+    background: #5386E4;
+    mix-blend-mode: normal;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.reg-button:hover {
+    box-shadow: 4px 6px 3px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+.reg-button p {
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 31px;
+}
+
+.reg-button p:hover {
+    text-decoration: none;
+}
+
+
+.introduce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #4C4B63 0%, rgba(76, 75, 99, 0) 48.75%, #C3C3C3 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(assets/pexels-mart-production-7550581.jpg);
+    background-size: cover;
+}
+
+.introduce-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 730px;
+    gap: 17px;
+    height: inherit;
+    padding: 76px 0px 76px;
+}
+
+.introduce-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.introduce-text {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.sign {
+    align-self: flex-end;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #FFFFFF;
+
+}
+
+.stats {
+    margin-top: 119px;
+    gap: 20px;
+    display: flex;
+    padding: 90px 80px;
+    justify-content: space-between;
+    background: #4C4B63;
+}
+
+.stat-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-element h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 71px;
+    line-height: 83px;
+    color: #FFFFFF;
+
+}
+
+.stat-element p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+
+
+    color: #FFFFFF;
+
+}
+
+.feedback-block {
+    padding: 119px 90px;
+}
+
+.feedback-block h1 {
+    margin: 0;
+    padding: 0 0 53px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+
+
+
+    color: #4C4B63;
+
+}
+
+.feedbacks {
+
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    white-space: nowrap;
+
+}
+
+.feedback {
+
+    padding: 39px 27px;
+    display: flex;
+    white-space: normal;
+    flex-direction: column;
+    align-items: center;
+    background: #ABA8B2;
+    border-radius: 10px;
+    min-width: calc((100%-40px)/3);
+}
+
+
+
+.feedback img {
+    width: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.feedback h1 {
+    padding: 21px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+
+
+    color: #000000;
+
+}
+
+.feedback p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+
+.star-bar {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.benefits {
+    display: flex;
+    padding: 0 90px;
+    background: #949396;
+
+}
+
+.benefits .photo {
+    width: 50%;
+    aspect-ratio: 1/1;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(148, 147, 150, 0) 58.09%, #949396 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)), url(assets/pexels-andrea-piacquadio-761993.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.benefit-content {
+    width: 50%;
+    gap: 30px;
+    flex-direction: column;
+    padding: 59px 0;
+    display: flex;
+    align-items: end;
+}
+
+.benefit-content h1 {
+    padding: 0;
+    margin: 0 0 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+
+    color: #252525;
+
+}
+
+.benefit {
+    display: flex;
+}
+
+.benefit p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+
+    color: #252525;
+}
+
+
+.final-interact {
+    padding: 104px 90px;
+    gap: 51px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4C4B63;
+}
+
+
+.final-interact h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+
+
+
+@media(max-width: 1170px) {
+
+    
+
+    .introduce {
+        padding: 0 23px;
+    }
+
+    .introduce-content {
+        width: 100%;
+    }
+
+    .introduce-title {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .introduce-text {
+        font-size: 15px;
+        line-height: normal;
+    }
+
+    .reg-button {
+        padding: 14px 18px;
+    }
+
+    .reg-button p {
+        font-size: 21px;
+    }
+
+
+    .side-menu:checked~.header .logo-flex ul {
+        max-height: 100%;
+    }
+
+    .side-menu:checked~.header {
+        right: 0;
+        left: 0;
+        position: fixed;
+    }
+
+
+    .hamb {
+        cursor: pointer;
+        display: flex;
+
+    }
+
+    .logo-flex {
+        align-items: center;
+    }
+
+    .stats {
+        padding: 24px 23px;
+        flex-direction: column;
+    }
+
+    .stats h1 {
+        padding: 0;
+        font-size: 48px;
+    }
+
+    .stats p {
+        font-size: 14px;
+    }
+
+    .feedback-block {
+        padding: 64px 23px;
+    }
+
+    .feedback-block h1 {
+        font-size: 24px;
+    }
+
+    .feedback {
+        min-width: 77%;
+    }
+
+    .star-bar {
+        width: 90%;
+    }
+
+    .feedback h1 {
+        font-size: 20px;
+    }
+
+    .feedback p {
+        font-size: 18px;
+    }
+
+    .benefits {
+        padding: 52px 23px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), radial-gradient(64.45% 64.45% at 50% 50%, rgba(148, 147, 150, 0) 58.09%, #949396 100%), url(assets/pexels-andrea-piacquadio-761993.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .benefit-content {
+        width: 100%;
+        align-content: end;
+    }
+
+    .benefits .photo {
+        display: none;
+    }
+
+    .benefit-content h1 {
+        font-size: 30px;
+        color: #FFFFFF;
+    }
+
+    .benefit p {
+        font-size: 23px;
+        color: #FFFFFF;
+    }
+
+    .benefit svg {
+        margin-left: 10px;
+
+        width: 30px;
+
+    }
+
+    .benefit svg path {
+
+        stroke: #FFFFFF;
+    }
+
+
+
+    .final-interact {
+        padding: 75px 23px;
+    }
+
+    .final-interact h1 {
+        font-size: 30px;
+        text-align: center;
+        line-height: normal;
+    }
+
+
+}
